@@ -1,6 +1,14 @@
+@import 'base/mixins';
+@import 'base/variables';
+@import 'blocks/promo';
+@import 'blocks/header';
+@import 'blocks/buttons';
+
 * {
 	font-family: 'Museo Sans Cyrl', 'Times New Roman', Times, serif;
 }
 
-@import 'base/mixins';
-@import 'base/variables';
+.container {
+	max-width: 950px;
+	margin: 0 auto;
+}
