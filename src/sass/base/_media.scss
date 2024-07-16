@@ -1,11 +1,5 @@
 @media (max-width: 1200px) {
-	.header {
-		padding: 0 20px 0 20px;
-	}
 	.promo {
-		&__wrapper {
-			padding: 0 20px 0 20px;
-		}
 		&__header {
 			font-size: 42px;
 		}
@@ -27,36 +21,75 @@
 }
 
 @media (max-width: 575px) {
-	.xs-hide {
-		display: none;
-	}
 	.promo {
 		width: 100%;
+		padding: 21px 2% 90px 2%;
 		&__header {
-			font-size: 35px;
+			font-size: 30px;
+			margin: 0 auto;
 		}
 		&__subheader {
-			font-size: 20px;
+			font-size: 17px;
+			margin: 0 auto;
+			margin-top: 5px;
 		}
 		&__icons {
-			width: 100%;
+			max-width: 100%;
+			margin: 0 auto;
+			margin-top: 40px;
+		}
+		&__icon {
+			font-size: 15px;
+			img {
+				width: 40%;
+			}
+		}
+		&__link {
+			margin: 0 auto;
+			margin-top: 18px;
+		}
+		.header {
+			flex-direction: column;
+			align-items: center;
+			&__official {
+				font-size: 20px;
+				margin-top: 10px;
+				span {
+					font-size: 20px;
+					margin-top: 0;
+				}
+			}
+			&__contacts {
+				margin-top: 10px;
+				a {
+					font-size: 20px;
+				}
+			}
+			.button_call {
+				margin: 0 auto;
+				width: 100%;
+			}
 		}
 	}
 	.button_main {
 		width: 270px;
+		margin: 0 auto;
+		margin-top: 67px;
 	}
 	.advantages {
+		padding: 2%;
 		&__header {
+			margin-top: 69px;
 			font-size: 28px;
 		}
 		&__title {
-			font-size: 25px;
+			font-size: 20px;
 			font-weight: 700;
 		}
 		&__descr {
-			font-size: 24px;
+			font-size: 20px;
 			span {
-				font-size: 23px;
+				font-size: 20px;
 			}
 		}
 		&__icons {
@@ -66,7 +99,6 @@
 		&__icon {
 			width: 100%;
 			height: 100%;
-			font-size: 18px;
 			padding: 0 20px 0 20px;
 			margin-top: 65px;
 			&:nth-child(2) {
@@ -78,44 +110,67 @@
 			img {
 				height: 100%;
 				width: 25%;
+				margin-bottom: 10px;
 			}
 		}
 	}
 }
 
 @media (max-width: 320px) {
-	.header {
-		display: block;
-		&__logo {
-			margin: 0 auto;
-		}
-		&__contacts {
-			margin-top: 10px;
-		}
-	}
 	.promo {
 		width: 100%;
 		&__header {
-			text-align: right;
+			text-align: center;
+			font-size: 25px;
 		}
 		&__subheader {
-			text-align: right;
+			text-align: center;
+			font-size: 18px;
 		}
 		&__icons {
-			width: 100%;
-			display: ruby;
+			display: block;
+			margin: 0 auto;
 		}
 		&__icon {
-			width: 49%;
+			width: 100%;
 			font-size: 17px;
+			margin-top: 30px;
+			&:nth-child(2) {
+				margin-top: 20px;
+			}
+			&:last-child {
+				margin-top: 20px;
+			}
 			img {
-				width: 44%;
+				width: 15%;
+				margin-bottom: 10px;
 			}
 		}
 		&__link {
 			display: block;
 			margin: 0 auto;
 			margin-top: 10px;
+		}
+		.header {
+			&__logo {
+				display: block;
+				margin: 0 auto;
+				img {
+					width: 100%;
+				}
+			}
+			&__official {
+				font-size: 17px;
+				span {
+					font-size: 17px;
+				}
+			}
+			&__contacts {
+				margin-top: 10px;
+				a {
+					font-size: 17px;
+				}
+			}
 		}
 	}
 }
