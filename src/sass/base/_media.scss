@@ -7,6 +7,16 @@
 			font-size: 24px;
 		}
 	}
+	.advantages {
+		&__subtitle {
+			font-size: 20px;
+			font-weight: 700;
+			margin-bottom: 20px;
+		}
+		&__descr {
+			font-size: 16px;
+		}
+	}
 }
 
 @media (max-width: 767px) {
@@ -82,10 +92,6 @@
 			margin-top: 69px;
 			font-size: 28px;
 		}
-		&__title {
-			font-size: 20px;
-			font-weight: 700;
-		}
 		&__descr {
 			font-size: 20px;
 			span {
@@ -113,6 +119,15 @@
 				margin-bottom: 10px;
 			}
 		}
+		&__subtitle {
+			font-size: 20px;
+			font-weight: 700;
+			margin-bottom: 29px;
+		}
+	}
+	.title {
+		font-size: 25px;
+		margin-top: 69px;
 	}
 }
 
