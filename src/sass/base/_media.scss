@@ -1,5 +1,6 @@
 @media (max-width: 1200px) {
 	.promo {
+		padding: 21px 2% 93px 2%;
 		&__header {
 			font-size: 42px;
 		}
@@ -8,6 +9,8 @@
 		}
 	}
 	.advantages {
+		height: 568px;
+		padding: 69px 2% 98px 2%;
 		&__subtitle {
 			font-size: 20px;
 			font-weight: 700;
@@ -16,6 +19,9 @@
 		&__descr {
 			font-size: 16px;
 		}
+	}
+	.consultation {
+		padding: 103px 2% 92px 2%;
 	}
 }
 
@@ -26,6 +32,20 @@
 		}
 		&__subheader {
 			font-size: 22px;
+		}
+	}
+	.consultation {
+		.title_left {
+			font-size: 32px;
+		}
+		&__descr {
+			font-size: 19px;
+		}
+		form {
+			width: 280px;
+			.button_submit {
+				font-size: 15px;
+			}
 		}
 	}
 }
@@ -87,7 +107,7 @@
 		margin-top: 67px;
 	}
 	.advantages {
-		padding: 2%;
+		height: 100%;
 		&__header {
 			margin-top: 69px;
 			font-size: 28px;
@@ -99,7 +119,7 @@
 			}
 		}
 		&__icons {
-			display: ruby;
+			display: block;
 			margin: 0 auto;
 		}
 		&__icon {
@@ -125,9 +145,26 @@
 			margin-bottom: 29px;
 		}
 	}
+	.consultation {
+		.title_left {
+			font-size: 25px;
+		}
+		&__descr {
+			text-align: center;
+			font-size: 17px;
+		}
+		form {
+			input {
+				height: 45px;
+			}
+			.button_submit {
+				height: 50px;
+			}
+		}
+	}
 	.title {
+		text-align: center;
 		font-size: 25px;
-		margin-top: 69px;
 	}
 }
 
@@ -185,6 +222,17 @@
 				a {
 					font-size: 17px;
 				}
+			}
+		}
+	}
+	.consultation {
+		width: 100%;
+		form {
+			width: 70%;
+			margin: 0 auto;
+			margin-top: 36px;
+			.button_submit {
+				font-size: 13px;
 			}
 		}
 	}
