@@ -1,11 +1,3 @@
-@media (max-width: 3840px) {
-	.carousel {
-		.tns-nav {
-			display: none;
-		}
-	}
-}
-
 @media (max-width: 1200px) {
 	.promo {
 		padding: 21px 2% 93px 2%;
@@ -33,35 +25,30 @@
 	}
 	.carousel {
 		padding: 81px 2%;
-		.prev {
-			left: 0%;
+		&__inner {
+			width: 100%;
+			margin: 0 auto;
+			img {
+				width: 100%;
+				margin: 0 auto;
+			}
+		}
+		.slick-prev {
+			right: 100%;
 			background: none;
 		}
-		.next {
-			right: 0%;
+		.slick-next {
+			left: 100%;
 			background: none;
-		}
-		.tns-nav {
-			display: none;
 		}
 	}
 }
 
 @media (max-width: 991px) {
 	.carousel {
+		padding: 81px 2%;
 		&__inner {
-			img {
-				width: 60%;
-			}
-		}
-		.tns-nav {
-			display: none;
-		}
-		.prev {
-			right: 80%;
-		}
-		.next {
-			left: 80%;
+			width: 70%;
 		}
 	}
 }
@@ -86,27 +73,6 @@
 			width: 280px;
 			.button_submit {
 				font-size: 15px;
-			}
-		}
-	}
-	.carousel {
-		&__inner {
-			img {
-				width: 60%;
-				background: none;
-			}
-		}
-		.tns-nav {
-			display: none;
-		}
-		.prev {
-			img {
-				width: 20%;
-			}
-		}
-		.next {
-			img {
-				width: 20%;
 			}
 		}
 	}
@@ -231,24 +197,7 @@
 	}
 	.carousel {
 		&__inner {
-			img {
-				width: 85%;
-			}
-		}
-		.tns-nav {
-			display: none;
-		}
-		.prev {
-			right: 88%;
-			img {
-				width: 60%;
-			}
-		}
-		.next {
-			left: 88%;
-			img {
-				width: 60%;
-			}
+			width: 60%;
 		}
 	}
 }
@@ -323,28 +272,26 @@
 	}
 	.carousel {
 		&__inner {
-			img {
-				width: 100%;
+			ul {
+				display: flex;
+				justify-content: space-between;
+				margin-top: 20px;
+				list-style: none;
+				padding: 0;
+				li {
+					button {
+						border-radius: 10%;
+						border-style: none;
+						width: 50px;
+						height: 10px;
+						font-size: 0;
+						background-color: lightgray;
+					}
+					&.active button {
+						background-color: black;
+					}
+				}
 			}
-		}
-		.tns-nav {
-			text-align: center;
-			width: 40%;
-			display: flex;
-			margin: 0 auto;
-			justify-content: space-between;
-			button {
-				background-color: gray;
-				border: none;
-				width: 30px;
-				height: 7px;
-			}
-			.tns-nav-active {
-				background-color: black;
-			}
-		}
-		.xs-hidden {
-			display: none;
 		}
 	}
 }

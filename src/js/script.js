@@ -1,43 +1,48 @@
-const slider = tns({
-	container: '.carousel__inner',
-	items: 1,
-	slideBy: 'page',
-	autoplay: false,
-	controls: false,
-	nav: false,
-	navPosition: 'bottom',
-	responsive: {
-		320: {
-			edgePadding: 20,
-			gutter: 20,
-			items: 1,
-			nav: true,
+$('.carousel__inner').slick({
+	infinite: true,
+	speed: 500,
+	adaptiveHeight: false,
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	prevArrow:
+		'<button type="button" class="slick-prev"><img src="icons/left.svg" /></button>',
+	nextArrow:
+		'<button type="button" class="slick-next"><img src="icons/right.svg" /></button>',
+	responsive: [
+		{
+			breakpoint: 1200,
+			settings: {
+				dots: false,
+				arrows: true,
+			},
 		},
-		767: {
-			items: 1,
+		{
+			breakpoint: 991,
+			settings: {
+				dots: false,
+				arrows: true,
+			},
 		},
-		575: {
-			items: 1,
+		{
+			breakpoint: 767,
+			settings: {
+				dots: false,
+				arrows: true,
+			},
 		},
-		991: {
-			items: 1,
+		{
+			breakpoint: 575,
+			settings: {
+				dots: false,
+				arrows: true,
+			},
 		},
-		1200: {
-			items: 1,
+		{
+			breakpoint: 321,
+			settings: {
+				dots: true,
+				arrows: false,
+			},
 		},
-		1440: {
-			items: 1,
-		},
-		2560: {
-			items: 1,
-		},
-	},
-})
-
-document.querySelector('.prev').addEventListener('click', () => {
-	slider.goTo('prev')
-})
-
-document.querySelector('.next').addEventListener('click', () => {
-	slider.goTo('next')
+	],
 })
