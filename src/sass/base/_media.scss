@@ -23,6 +23,39 @@
 	.consultation {
 		padding: 103px 2% 92px 2%;
 	}
+	.carousel {
+		padding: 81px 2%;
+		.prev {
+			left: 0%;
+			background: none;
+		}
+		.next {
+			right: 0%;
+			background: none;
+		}
+		.tns-nav {
+			display: none;
+		}
+	}
+}
+
+@media (max-width: 991px) {
+	.carousel {
+		&__inner {
+			img {
+				width: 60%;
+			}
+		}
+		.tns-nav {
+			display: none;
+		}
+		.prev {
+			right: 80%;
+		}
+		.next {
+			left: 80%;
+		}
+	}
 }
 
 @media (max-width: 767px) {
@@ -45,6 +78,27 @@
 			width: 280px;
 			.button_submit {
 				font-size: 15px;
+			}
+		}
+	}
+	.carousel {
+		&__inner {
+			img {
+				width: 60%;
+				background: none;
+			}
+		}
+		.tns-nav {
+			display: none;
+		}
+		.prev {
+			img {
+				width: 20%;
+			}
+		}
+		.next {
+			img {
+				width: 20%;
 			}
 		}
 	}
@@ -146,6 +200,7 @@
 		}
 	}
 	.consultation {
+		padding: 103px 2% 92px 2%;
 		.title_left {
 			font-size: 25px;
 		}
@@ -165,6 +220,28 @@
 	.title {
 		text-align: center;
 		font-size: 25px;
+	}
+	.carousel {
+		&__inner {
+			img {
+				width: 85%;
+			}
+		}
+		.tns-nav {
+			display: none;
+		}
+		.prev {
+			right: 88%;
+			img {
+				width: 60%;
+			}
+		}
+		.next {
+			left: 88%;
+			img {
+				width: 60%;
+			}
+		}
 	}
 }
 
@@ -234,6 +311,32 @@
 			.button_submit {
 				font-size: 13px;
 			}
+		}
+	}
+	.carousel {
+		&__inner {
+			img {
+				width: 100%;
+			}
+		}
+		.tns-nav {
+			text-align: center;
+			width: 40%;
+			display: flex;
+			margin: 0 auto;
+			justify-content: space-between;
+			button {
+				background-color: gray;
+				border: none;
+				width: 30px;
+				height: 7px;
+			}
+			.tns-nav-active {
+				background-color: black;
+			}
+		}
+		.xs-hidden {
+			display: none;
 		}
 	}
 }
