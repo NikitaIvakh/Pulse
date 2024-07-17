@@ -1,3 +1,11 @@
+@media (max-width: 3840px) {
+	.carousel {
+		.tns-nav {
+			display: none;
+		}
+	}
+}
+
 @media (max-width: 1200px) {
 	.promo {
 		padding: 21px 2% 93px 2%;
