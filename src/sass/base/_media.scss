@@ -26,7 +26,7 @@
 	.carousel {
 		padding: 81px 2%;
 		&__inner {
-			width: 100%;
+			width: 80%;
 			margin: 0 auto;
 			img {
 				width: 100%;
@@ -36,10 +36,22 @@
 		.slick-prev {
 			right: 100%;
 			background: none;
+			img {
+				width: 30px;
+			}
 		}
 		.slick-next {
 			left: 100%;
 			background: none;
+			img {
+				width: 30px;
+			}
+		}
+	}
+	.catalog {
+		padding: 0 2% 100px 2%;
+		&__content {
+			width: 100%;
 		}
 	}
 }
@@ -49,6 +61,27 @@
 		padding: 81px 2%;
 		&__inner {
 			width: 70%;
+			img {
+				width: 80%;
+			}
+		}
+	}
+	.catalog {
+		&__content {
+			justify-content: space-around;
+			align-items: center;
+		}
+		&-item {
+			margin-right: 0;
+			&:nth-child(3) {
+				margin-right: 0px;
+			}
+			&:nth-child(6) {
+				margin-right: 0px;
+			}
+			&__content {
+				margin-right: 0px;
+			}
 		}
 	}
 }
@@ -73,6 +106,24 @@
 			width: 280px;
 			.button_submit {
 				font-size: 15px;
+			}
+		}
+	}
+	.catalog {
+		&__content {
+			justify-content: center;
+			align-items: center;
+		}
+		&-item {
+			margin-right: 20px;
+			&:nth-child(2) {
+				margin-right: 0px;
+			}
+			&:nth-child(3) {
+				margin-right: 20px;
+			}
+			&:nth-child(4) {
+				margin-right: 0px;
 			}
 		}
 	}
@@ -200,6 +251,23 @@
 			width: 60%;
 		}
 	}
+	.catalog {
+		padding: 2%;
+		&__tabs {
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			li {
+				margin-bottom: 10px;
+				&:nth-child(3) {
+					margin-bottom: 0;
+				}
+			}
+		}
+		&-item {
+			margin-right: 0;
+		}
+	}
 }
 
 @media (max-width: 320px) {
@@ -291,6 +359,16 @@
 						background-color: black;
 					}
 				}
+			}
+		}
+	}
+	.catalog {
+		&-item {
+			&:nth-child(3) {
+				margin-right: 0;
+			}
+			&:nth-child(6) {
+				margin-right: 0;
 			}
 		}
 	}
