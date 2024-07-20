@@ -294,6 +294,21 @@
 			}
 		}
 	}
+	.footer {
+		&__info {
+			width: 350px;
+			height: 200px;
+			padding: 7%;
+		}
+		&__address {
+			font-size: 16px;
+			margin-bottom: 20px;
+		}
+		&__phone {
+			font-size: 20px;
+			margin-bottom: 20px;
+		}
+	}
 }
 
 @media (max-width: 320px) {
@@ -396,6 +411,11 @@
 			&:nth-child(6) {
 				margin-right: 0;
 			}
+		}
+	}
+	.footer {
+		&__info {
+			width: 100%;
 		}
 	}
 }
