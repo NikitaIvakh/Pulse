@@ -130,4 +130,6 @@ $(document).ready(function () {
 	validateForms('#consulting-form')
 	validateForms('#consulting form')
 	validateForms('#order form')
+
+	$('input[name=phone]').mask('+375 (99) 999-99-99')
 })
