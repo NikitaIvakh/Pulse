@@ -61,6 +61,11 @@
 			width: 100%;
 		}
 	}
+	.overlay {
+		.modal {
+			width: 380px;
+		}
+	}
 }
 
 @media (max-width: 991px) {
@@ -307,6 +312,25 @@
 		&__phone {
 			font-size: 20px;
 			margin-bottom: 20px;
+		}
+	}
+	.overlay {
+		.modal {
+			width: 70%;
+			&__close {
+				top: 10px;
+				right: 10px;
+			}
+		}
+		.feed-form {
+			width: 100%;
+			input {
+				height: 40px;
+			}
+			.button_submit {
+				height: 35px;
+				font-size: 12px;
+			}
 		}
 	}
 }
