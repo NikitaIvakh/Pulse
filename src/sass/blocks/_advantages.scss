@@ -35,6 +35,16 @@
 		font-size: 14px;
 		font-weight: 300;
 		color: #0d0d0d;
+		&_animated {
+			animation: heartbeat 1.5s ease infinite;
+			// animation-name: heartbeat;
+			// animation-duration: 2s;
+			// animation-timing-function: ease;
+			// animation-iteration-count: infinite;
+			&:hover {
+				animation-play-state: paused;
+			}
+		}
 		img {
 			display: block;
 			margin: 0 auto;
