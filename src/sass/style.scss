@@ -1,6 +1,21 @@
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/fonts';
+@import 'libs/slick';
+@import 'libs/animate';
+
 @import 'base/mixins';
 @import 'base/variables';
 @import 'base/animations';
+
+* {
+	font-family: 'Museo Sans Cyrl', 'Times New Roman', Times, serif;
+}
+
+.container {
+	position: relative;
+	max-width: 950px;
+	margin: 0 auto;
+}
 
 @import 'blocks/promo';
 @import 'blocks/header';
@@ -16,13 +31,3 @@
 @import 'blocks/modals';
 @import 'blocks/_pageup';
 @import 'base/media';
-
-* {
-	font-family: 'Museo Sans Cyrl', 'Times New Roman', Times, serif;
-}
-
-.container {
-	position: relative;
-	max-width: 950px;
-	margin: 0 auto;
-}
