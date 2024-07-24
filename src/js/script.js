@@ -167,7 +167,7 @@ $(document).ready(function () {
 	})
 
 	// Smooth scrolling
-	$("a[href^='#']").on('click', function (event) {
+	$('a[href=#up]').on('click', function (event) {
 		if (this.hash !== '') {
 			event.preventDefault()
 			var hash = this.hash
